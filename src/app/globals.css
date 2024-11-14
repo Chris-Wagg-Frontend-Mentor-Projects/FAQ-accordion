@@ -85,3 +85,17 @@ figcaption {
 	text-wrap: pretty;
 	max-width: 65ch;
 }
+
+:root {
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-light-pink: hsl(275, 100%, 97%);
+	--clr-grey-purple: hsl(292, 16%, 49%);
+	--clr-dark-purple: hsl(292, 42%, 14%);
+
+	--fs-p: 16px;
+	--fs-lg: 2rem;
+
+	--fw-400: 400;
+	--fw-600: 600;
+	--fe-700: 700;
+}
