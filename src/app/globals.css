@@ -97,5 +97,68 @@ figcaption {
 
 	--fw-400: 400;
 	--fw-600: 600;
-	--fe-700: 700;
+	--fw-700: 700;
+}
+
+/* utility classes */
+
+body {
+	background: url('../../public/background-pattern-desktop.svg');
+	background-repeat: no-repeat;
+	background-color: var(--clr-light-pink);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	font-weight: var(--fw-600);
+	margin: 1.5rem 0;
+}
+
+summary::after {
+	content: '';
+	width: 30px;
+	height: 30px;
+	background: url('../../public/icon-plus.svg');
+	background-size: cover;
+	transition: 0.2s;
+}
+
+details[open] > summary::after {
+	background: url('../../public/icon-minus.svg');
+	transform: rotate(180deg);
+}
+
+details {
+	border-top: 1px solid lightgray;
+}
+
+p {
+	color: var(--clr-grey-purple);
+	margin: 1rem 0;
+}
+
+/* ------------------------------ */
+
+.faq-container {
+	width: 500px;
+	/* justify-self: center;
+	align-self: center; */
+	background-color: white;
+}
+
+.title-container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	/* margin: 2rem 0; */
+}
+
+.title-container > h1 {
+	margin: 0 0 0 2rem;
+	font-weight: var(--fw-700);
+	font-size: var(--fs-lg);
 }
