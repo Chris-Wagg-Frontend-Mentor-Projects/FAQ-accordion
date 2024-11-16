@@ -93,7 +93,7 @@ figcaption {
 	--clr-dark-purple: hsl(292, 42%, 14%);
 
 	--fs-p: 16px;
-	--fs-lg: 2rem;
+	--fs-lg: 4rem;
 
 	--fw-400: 400;
 	--fw-600: 600;
@@ -116,6 +116,11 @@ summary {
 	justify-content: space-between;
 	font-weight: var(--fw-600);
 	margin: 1.5rem 0;
+	cursor: pointer;
+}
+
+details:hover {
+	color: #ad28eb;
 }
 
 summary::after {
@@ -133,28 +138,33 @@ details[open] > summary::after {
 }
 
 details {
-	border-top: 1px solid lightgray;
+	border-top: 1px solid rgb(235, 235, 235);
+}
+details:first-of-type {
+	border-top: 0;
 }
 
 p {
 	color: var(--clr-grey-purple);
 	margin: 1rem 0;
+	max-width: 52ch;
+	font-size: var(--fs-p);
 }
 
 /* ------------------------------ */
 
 .faq-container {
-	width: 500px;
-	/* justify-self: center;
-	align-self: center; */
+	min-width: 600px;
 	background-color: white;
+	padding: 2rem;
+	border-radius: 15px;
 }
 
 .title-container {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	/* margin: 2rem 0; */
+	padding-bottom: 2rem;
 }
 
 .title-container > h1 {

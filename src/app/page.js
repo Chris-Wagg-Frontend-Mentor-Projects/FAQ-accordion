@@ -38,8 +38,7 @@ export default function Home() {
 				</details>
 				<details>
 					<summary>
-						How can I get help if I'm stuck on a Frontend Mentor
-						challenge?
+						How can I get help if I'm stuck on a challenge?
 					</summary>
 					<p>
 						The best place to get help is inside Frontend Mentor's
