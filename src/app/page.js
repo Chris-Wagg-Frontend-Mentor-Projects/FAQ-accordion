@@ -9,6 +9,7 @@ export default function Home() {
 				<details>
 					<summary>
 						What is Frontend Mentor, and how will it help me?
+						<img src='icon-plus.svg' alt='' role='none' />
 					</summary>
 					<p>
 						Frontend Mentor offers realistic coding challenges to
@@ -19,7 +20,10 @@ export default function Home() {
 					</p>
 				</details>
 				<details>
-					<summary>Is Frontend Mentor free?</summary>
+					<summary>
+						Is Frontend Mentor free?
+						<img src='icon-plus.svg' alt='' role='none' />
+					</summary>
 					<p>
 						Yes, Frontend Mentor offers both free and premium coding
 						challenges, with the free option providing access to a
@@ -29,6 +33,7 @@ export default function Home() {
 				<details>
 					<summary>
 						Can I use Frontend Mentor projects in my portfolio?
+						<img src='icon-plus.svg' alt='' role='none' />
 					</summary>
 					<p>
 						Yes, you can use projects completed on Frontend Mentor
@@ -39,6 +44,7 @@ export default function Home() {
 				<details>
 					<summary>
 						How can I get help if I'm stuck on a challenge?
+						<img src='icon-plus.svg' alt='' role='none' />
 					</summary>
 					<p>
 						The best place to get help is inside Frontend Mentor's

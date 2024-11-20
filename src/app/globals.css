@@ -49,6 +49,15 @@ h5,
 h6 {
 	text-wrap: balance;
 }
+/* Remove heading default margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
 /* A elements that don't have a class get default styles */
 a:not([class]) {
 	color: currentColor;
@@ -94,6 +103,7 @@ figcaption {
 
 	--fs-p: 16px;
 	--fs-lg: 4rem;
+	--fs-med: 2rem;
 
 	--fw-400: 400;
 	--fw-600: 600;
@@ -117,24 +127,7 @@ summary {
 	font-weight: var(--fw-600);
 	margin: 1.5rem 0;
 	cursor: pointer;
-}
-
-details:hover {
-	color: #ad28eb;
-}
-
-summary::after {
-	content: '';
-	width: 30px;
-	height: 30px;
-	background: url('../../public/icon-plus.svg');
-	background-size: cover;
-	transition: 0.2s;
-}
-
-details[open] > summary::after {
-	background: url('../../public/icon-minus.svg');
-	transform: rotate(180deg);
+	align-items: center;
 }
 
 details {
@@ -151,10 +144,24 @@ p {
 	font-size: var(--fs-p);
 }
 
+/* ------- animation / transition classes -------- */
+
+details:hover {
+	color: #ad28eb;
+}
+
+summary > img {
+	transition: 0.2s;
+}
+
+details[open] > summary > img {
+	transform: rotate(180deg);
+	content: url('../../public/icon-minus.svg');
+}
+
 /* ------------------------------ */
 
 .faq-container {
-	min-width: 600px;
 	background-color: white;
 	padding: 2rem;
 	border-radius: 15px;
@@ -162,13 +169,34 @@ p {
 
 .title-container {
 	display: flex;
-	align-items: center;
-	text-align: center;
-	padding-bottom: 2rem;
 }
 
 .title-container > h1 {
-	margin: 0 0 0 2rem;
 	font-weight: var(--fw-700);
 	font-size: var(--fs-lg);
+	align-self: center;
+	margin-left: 1rem;
+}
+
+@media (max-width: 600px) {
+	.faq-container {
+		margin: 2rem;
+	}
+
+	.title-container {
+		padding-bottom: 0;
+	}
+
+	.title-container > h1 {
+		font-weight: var(--fw-700);
+		font-size: var(--fs-med);
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		background: url('../../public/background-pattern-mobile.svg');
+		background-repeat: no-repeat;
+		background-color: var(--clr-light-pink);
+	}
 }
